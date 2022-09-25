@@ -32,7 +32,7 @@ const Cast = () => {
               />
             ) : (
               <img
-                src="../../img/no-image.jpg"
+                src="../img/no-image.jpg"
                 alt={item.original_name}
                 width="300px"
                 height="450px"

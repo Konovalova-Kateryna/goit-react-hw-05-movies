@@ -28,6 +28,6 @@ export const SearchButton = styled.button`
 `;
 export const StyledInput = styled(Field)`
   padding: 5px;
-  height: 36px;
+  height: 35px;
   border-right: none;
 `;

@@ -1,5 +1,6 @@
 import { BackLink } from 'components/BackLink';
-import { useEffect, useState } from 'react';
+import { Spinner } from 'components/Loader';
+import { Suspense, useEffect, useState } from 'react';
 import { useLocation, useParams, Link, Outlet } from 'react-router-dom';
 import { getMovieById } from 'services/API';
 import {
@@ -77,7 +78,9 @@ const MovieDetails = () => {
           </FilmGenresItem>
         </ul>
       </AdditionalSection>
-      <Outlet />
+      <Suspense fallback={<Spinner />}>
+        <Outlet />
+      </Suspense>
     </>
   );
 };

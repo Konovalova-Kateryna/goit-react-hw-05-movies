@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 const Home = () => {
   return (
     <main>
-      <h1>Trending today</h1>
+      <h2>Trending today</h2>
       <TrendingMovies />
       <Outlet />
     </main>
