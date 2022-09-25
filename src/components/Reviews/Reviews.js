@@ -22,7 +22,7 @@ const Reviews = () => {
 
   return (
     <>
-      {reviews.total_results === 0 ? (
+      {reviews.results === [] ? (
         <ReviewsContent>There is no review yet</ReviewsContent>
       ) : (
         <ReviewsList>
